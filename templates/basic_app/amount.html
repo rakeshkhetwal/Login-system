@@ -1,0 +1,19 @@
+{% extends "basic_app/base.html" %}
+
+{% block body_block %}
+
+<form method="post" action="{% url 'basic_app:amountadd' %}">
+{% csrf_token %}
+
+        <em> add amount</em>
+       <input type="number" name="amount" >
+        <input type="submit" value="submit">
+
+</form>
+
+
+    <em> amount in account</em>
+
+
+
+{% endblock %}
